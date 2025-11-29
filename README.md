@@ -65,11 +65,14 @@ Cet atelier a pour objectif de guider les étudiants dans la mise en place d’u
 
 ## Structure du projet
 atelier-lambda/
-│ docker-compose.yml
-│
-└───app/
-   └───datasets/
-        │ batch_job.py
-        │ streaming_job.py
-        │ serving_layer.py
-        
+├── docker-compose.yml          # Configuration des conteneurs
+├── config                      # Configuration Hadoop/YARN
+├── README.md                   # Ce fichier
+├── app/
+│   ├── datasets/
+│   │   └── transactions.json   # Dataset batch
+│   ├── batch_job.py           # Job Spark batch
+│   ├── streaming_job.py       # Job Spark streaming
+│   └── serving_layer.py       # Fusion batch + streaming
+└── volumes/
+    └── namenode/              # Données HDFS (généré automatiquement)
