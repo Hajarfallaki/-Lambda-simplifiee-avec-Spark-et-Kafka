@@ -383,19 +383,27 @@ docker exec -it spark python /app/serving_layer.py
 ##  Captures d'écran
 
 ###  Capture 1 — Conteneurs Docker actifs
-*(Insérer ici la capture d'écran de `docker ps`)*
+<img width="936" height="566" alt="Capture d&#39;écran 2025-11-29 182653" src="https://github.com/user-attachments/assets/ef8afe1a-ee47-4076-bfd2-f2095dbb3cb1" />
+<img width="1265" height="539" alt="Capture d&#39;écran 2025-11-29 182721" src="https://github.com/user-attachments/assets/15405ce9-6c09-43e0-ab9c-1de6bd757174" />
+
 
 ###  Capture 2 — Résultat du batch job
-*(Insérer ici la capture d'écran de l'agrégation batch)*
+<img width="886" height="285" alt="Capture d&#39;écran 2025-11-29 192238" src="https://github.com/user-attachments/assets/23af30f3-5778-4a16-a62c-03b787c4a399" />
+
 
 ### Capture 3 — Producteur Kafka avec messages JSON
-*(Insérer ici la capture d'écran)*
+<img width="1701" height="615" alt="Capture d&#39;écran 2025-11-29 192732" src="https://github.com/user-attachments/assets/764fb884-a278-436f-a2a8-01c4c5090a72" />
+
 
 ###  Capture 4 — Spark Streaming en temps réel
-*(Insérer ici la capture d'écran du streaming)*
+<img width="885" height="402" alt="Capture d&#39;écran 2025-11-29 192305" src="https://github.com/user-attachments/assets/c48c48c6-b6f0-4b4e-af62-223db539f680" />
+<img width="1701" height="615" alt="Capture d&#39;écran 2025-11-29 192732" src="https://github.com/user-attachments/assets/881dc6d5-504f-4267-a91a-23e6c6c9099d" />
+
 
 ###  Capture 5 — Résultat final `serving_view.json`
-*(Insérer ici la capture d'écran du JSON final)*
+<img width="885" height="402" alt="Capture d&#39;écran 2025-11-29 192305" src="https://github.com/user-attachments/assets/7088bb7c-8552-4cdd-9740-fdff39871021" />
+<img width="1861" height="448" alt="Capture d&#39;écran 2025-11-29 200706" src="https://github.com/user-attachments/assets/dc621e4a-9c08-4dfe-b0e3-dda784d21d7a" />
+
 
 ---
 
