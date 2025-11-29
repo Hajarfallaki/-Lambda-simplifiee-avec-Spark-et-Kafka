@@ -1,12 +1,12 @@
-# 🚀 Architecture Lambda avec Spark et Kafka
+# Architecture Lambda avec Spark et Kafka
 
 > Atelier pratique pour implémenter une architecture Lambda simplifiée
 
-**Réalisé par** : 👩‍💻 Hajar Elfallaki-Idrissi
+**Réalisé par** :  Hajar Elfallaki-Idrissi
 
 ---
 
-## 📋 Table des matières
+##  Table des matières
 
 - [Introduction](#introduction)
 - [Objectifs pédagogiques](#objectifs-pédagogiques)
@@ -25,13 +25,13 @@
 
 ---
 
-## 🎯 Introduction
+##  Introduction
 
 Cet atelier guide les étudiants dans la mise en place d'une **architecture Lambda simplifiée** pour comprendre les principes fondamentaux du traitement de données Big Data, à la fois en mode **batch** et en mode **streaming** grâce à **Apache Spark** et **Apache Kafka**.
 
 ---
 
-## 📚 Objectifs pédagogiques
+##  Objectifs pédagogiques
 
 À la fin de cet atelier, vous serez capable de :
 
@@ -44,19 +44,19 @@ Cet atelier guide les étudiants dans la mise en place d'une **architecture Lamb
 
 ---
 
-## 🏗️ Architecture Lambda - Rappel théorique
+##  Architecture Lambda - Rappel théorique
 
-### 1️⃣ Batch Layer
+### 1️ Batch Layer
 - **Rôle** : Traite toutes les données historiques
 - **Résultat** : Vues batch précises et complètes
 - **Technologies** : Spark Batch, Hadoop MapReduce
 
-### 2️⃣ Speed Layer (Streaming Layer)
+### 2️ Speed Layer (Streaming Layer)
 - **Rôle** : Traite les nouvelles données en temps réel
 - **Résultat** : Résultats rapides mais approximatifs
 - **Technologies** : Kafka + Spark Structured Streaming, Apache Flink
 
-### 3️⃣ Serving Layer
+### 3️ Serving Layer
 - **Rôle** : Combine les résultats de Batch & Speed Layer
 - **Résultat** : Vue finale unifiée pour les applications clientes
 
@@ -85,16 +85,16 @@ Cet atelier guide les étudiants dans la mise en place d'une **architecture Lamb
 
 ---
 
-## ⚙️ Pré-requis techniques
+##  Pré-requis techniques
 
-- 🐳 **Docker** et **Docker Compose** installés
-- 🐍 Connaissances de base en **Python**
-- ⚡ Notions sur **Apache Spark** (DataFrames, spark-submit)
-- 📨 Notions sur **Apache Kafka** (topics, producteurs)
+-  **Docker** et **Docker Compose** installés
+-  Connaissances de base en **Python**
+-  Notions sur **Apache Spark** (DataFrames, spark-submit)
+-  Notions sur **Apache Kafka** (topics, producteurs)
 
 ---
 
-## 📁 Structure du projet
+##  Structure du projet
 
 ```
 atelier-lambda/
@@ -112,7 +112,7 @@ atelier-lambda/
 
 ---
 
-## 📊 Dataset utilisé
+##  Dataset utilisé
 
 **Fichier** : `app/datasets/transactions.json`
 
@@ -126,7 +126,7 @@ atelier-lambda/
 
 ---
 
-## 🐳 Installation et démarrage
+##  Installation et démarrage
 
 ### 1. Cloner le projet
 
@@ -191,7 +191,7 @@ Vous devriez voir : `zookeeper`, `kafka`, `spark`
 
 ---
 
-## 🗂️ Batch Layer – Traitement des données historiques
+##  Batch Layer – Traitement des données historiques
 
 ### Objectif
 Traiter l'ensemble des données historiques et produire une vue agrégée par client.
@@ -242,7 +242,7 @@ docker exec -it spark spark-submit /app/batch_job.py
 
 ---
 
-## ⚡ Speed Layer – Traitement en temps réel
+##  Speed Layer – Traitement en temps réel
 
 ### Objectif
 Traiter les nouvelles transactions en temps réel via Kafka et Spark Streaming.
@@ -326,7 +326,7 @@ Les agrégations s'affichent en continu dans la console Spark.
 
 ---
 
-## 🔄 Serving Layer – Fusion Batch + Streaming
+##  Serving Layer – Fusion Batch + Streaming
 
 ### Objectif
 Combiner les résultats du batch et du streaming pour produire une vue finale unifiée.
@@ -380,26 +380,26 @@ docker exec -it spark python /app/serving_layer.py
 
 ---
 
-## 📸 Captures d'écran
+##  Captures d'écran
 
-### 📸 Capture 1 — Conteneurs Docker actifs
+###  Capture 1 — Conteneurs Docker actifs
 *(Insérer ici la capture d'écran de `docker ps`)*
 
-### 📸 Capture 2 — Résultat du batch job
+###  Capture 2 — Résultat du batch job
 *(Insérer ici la capture d'écran de l'agrégation batch)*
 
-### 📸 Capture 3 — Producteur Kafka avec messages JSON
+### Capture 3 — Producteur Kafka avec messages JSON
 *(Insérer ici la capture d'écran)*
 
-### 📸 Capture 4 — Spark Streaming en temps réel
+###  Capture 4 — Spark Streaming en temps réel
 *(Insérer ici la capture d'écran du streaming)*
 
-### 📸 Capture 5 — Résultat final `serving_view.json`
+###  Capture 5 — Résultat final `serving_view.json`
 *(Insérer ici la capture d'écran du JSON final)*
 
 ---
 
-## ❓ Questions et réponses
+##  Questions et réponses
 
 ### 1. Quel est le rôle de chaque couche ?
 
@@ -444,7 +444,7 @@ serving_view.write.mode("overwrite").json("/app/output/serving_view.json")
 
 ---
 
-## 🎓 Conclusion
+##  Conclusion
 
 Cet atelier permet de comprendre et expérimenter l'**architecture Lambda** en utilisant **Apache Spark** et **Apache Kafka**, tout en visualisant la différence entre traitement batch et streaming, et la fusion des résultats dans une Serving Layer.
 
@@ -452,10 +452,7 @@ Il met en évidence les **avantages** et **limites** de l'architecture Lambda, e
 
 ---
 
-## 📝 Licence
 
-Ce projet est à usage pédagogique.
 
----
 
-**Bon courage ! 🚀**
+
