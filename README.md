@@ -64,3 +64,12 @@ Cet atelier a pour objectif de guider les étudiants dans la mise en place d’u
 ---
 
 ## Structure du projet
+atelier-lambda/
+│ docker-compose.yml
+│
+└───app/
+   └───datasets/
+        │ batch_job.py
+        │ streaming_job.py
+        │ serving_layer.py
+        
