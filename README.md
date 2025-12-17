@@ -437,18 +437,18 @@ serving_view.write.mode("overwrite").json("/app/output/serving_view.json")
 
 ### 5. Quelles sont les limites de l'architecture Lambda ?
 
-❌ **Double code** entre batch et streaming  
-❌ **Complexité de maintenance**  
-❌ **Risque d'incohérence** entre les deux couches  
-❌ **Infrastructure lourde** (gestion de deux pipelines)  
-❌ **Scalabilité difficile**  
+ **Double code** entre batch et streaming  
+ **Complexité de maintenance**  
+ **Risque d'incohérence** entre les deux couches  
+ **Infrastructure lourde** (gestion de deux pipelines)  
+ **Scalabilité difficile**  
 
 ### 6. Quelle est la motivation de l'architecture Kappa ?
 
-✅ Supprime la Batch Layer  
-✅ Pipeline streaming unique  
-✅ Moins de maintenance, coûts réduits  
-✅ Traitement unifié historique + temps réel  
+ Supprime la Batch Layer  
+ Pipeline streaming unique  
+ Moins de maintenance, coûts réduits  
+ Traitement unifié historique + temps réel  
 
 ---
 
